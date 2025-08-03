@@ -2,11 +2,17 @@
 
 Marpを使用したスライドのソースコードを管理するリポジトリです。
 
-## Requirements
+## List of Slides
+
+- [20250729 - ファイルの末尾には改行を入れましょう](https://obikosato.github.io/slides/20250729-trailing-line-break-police/)
+
+## Editing
+
+### Requirements
 
 - [Marp CLI](https://github.com/marp-team/marp-cli)
 
-## Commands
+### Commands
 
 ```sh
 # Serverモードでプレビュー

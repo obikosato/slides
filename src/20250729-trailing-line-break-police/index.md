@@ -1,6 +1,7 @@
 ---
 marp: true
 paginate: true
+title: ファイルの末尾には改行を入れましょう
 footer: '2025-07-29 | devds勉強会 | @obikosato'
 style: |
   section.title *, h1 {
