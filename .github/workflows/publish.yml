@@ -31,11 +31,14 @@ jobs:
       with:
         config-file: .marprc.yml
 
+    - name: Fix dist directory ownership
+      run: sudo chown -R runner:docker dist
+
     - name: Copy images to dist directory
       run: |
         find src -type d -name images | while read -r img_dir; do
           TARGET_DIR="dist/${img_dir#src/}"
-          [ -d "${TARGET_DIR}" ] || mkdir -p "${TARGET_DIR}"
+          mkdir -p "${TARGET_DIR}"
           cp -r "${img_dir}/." "${TARGET_DIR}/"
         done
 
