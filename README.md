@@ -4,7 +4,7 @@ Marpを使用したスライドのソースコードを管理するリポジト�
 
 ## List of Slides
 
-- [20250729 - ファイルの末尾には改行を入れましょう](https://obikosato.github.io/slides/20250729-trailing-line-break-police/)
+- [20250729 - ファイルの末尾には改行を入れましょう](https://obikosato.github.io/slides/20250729-trailing-line-break/)
 
 ## Editing
 
