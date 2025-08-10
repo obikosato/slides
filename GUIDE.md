@@ -4,14 +4,15 @@
 
 ## 注意事項
 
-本リポジトリに移行の手順でスライドを作成し、GitHubにpushすると、GitHub Actionsが自動でスライドを公開します。**機密情報などを含むスライドは、GitHubにpushしないでください。**
+本リポジトリは、パブリックなGitHubリポジトリです。**機密情報などを含むスライドは、pushしないでください。**
 
 ## ワークスペースを作成する
 
 ```sh
-src/<スライド用のディレクトリ名>/
-├──images/ # 画像を格納するディレクトリ
-└──index.md
+.
+└── src/<スライド用のディレクトリ名>/
+    ├── images/ # 画像を格納するディレクトリ
+    └── index.md
 ```
 
 ## ローカルでプレビュー・変換する
@@ -54,6 +55,14 @@ mainブランチにpushすると、GitHub Actionsが自動でスライドを公�
 ```
 
 [KoharaKazuya/marp-cli-action](https://github.com/KoharaKazuya/marp-cli-action)を使用しています。
+
+## GitHub Pages一覧
+
+Markdown形式でGitHub Pagesのリンクをリストアップできます。
+
+```sh
+./ls-pages.sh
+```
 
 ## Marpについての参考リンク
 
