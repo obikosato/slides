@@ -22,12 +22,7 @@ pdf: copy-images
 	marp --config $(MARP_CONFIG) --pdf
 
 copy-images:
-	@echo "Copying images to dist directory..."
-	@find src -type d -name images | while read -r img_dir; do \
-		target_dir="dist/$${img_dir#src/}"; \
-		[ -d "$${target_dir}" ] || mkdir -p "$${target_dir}"; \
-		cp -r "$${img_dir}/." "$${target_dir}/"; \
-	done
+	@./copy-assets.sh
 
 # 生成されたファイルを削除
 clean:

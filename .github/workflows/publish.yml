@@ -34,13 +34,11 @@ jobs:
     - name: Fix dist directory ownership
       run: sudo chown -R runner:docker dist
 
+    - name: Make copy-assets.sh executable
+      run: chmod +x copy-assets.sh
+
     - name: Copy images to dist directory
-      run: |
-        find src -type d -name images | while read -r img_dir; do
-          TARGET_DIR="dist/${img_dir#src/}"
-          mkdir -p "${TARGET_DIR}"
-          cp -r "${img_dir}/." "${TARGET_DIR}/"
-        done
+      run: ./copy-assets.sh
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
