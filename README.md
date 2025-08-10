@@ -6,24 +6,6 @@ Marpを使用したスライドのソースコードを管理するリポジト�
 
 - [20250729 - ファイルの末尾には改行を入れましょう](https://obikosato.github.io/slides/20250729-trailing-line-break/)
 
-## Editing
+## How to Add Slides
 
-### Requirements
-
-- [Marp CLI](https://github.com/marp-team/marp-cli)
-
-### Commands
-
-```sh
-# Serverモードでプレビュー
-make browse
-
-# HTMLに変換
-make html
-
-# PDFに変換
-make pdf
-
-# distディレクトリをクリア
-make clean
-```
+[スライド作成のガイド](GUIDE.md)を参照。
