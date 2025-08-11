@@ -214,6 +214,21 @@ jobs:
 
 ---
 
+## 実際の設定例
+
+EditorConfig + GitHub Actions + ブランチ保護ルールの
+具体的な設定手順をこちらにまとめました。
+
+<https://github.com/obikosato/ci-sample/blob/main/protect-main-with-editorconfig.md>
+
+- GitHub Actionsで.editorconfigチェックを設定
+- チェック結果をプルリクエストで必須化
+- mainブランチでチェック必須にして保護設定
+
+これにより、末尾改行のないファイルはmainブランチにマージできなくなります。
+
+---
+
 ## まとめ
 
 - ファイルの末尾に改行を入れましょう🙏
